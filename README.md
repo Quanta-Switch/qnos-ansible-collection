@@ -10,10 +10,10 @@ Ansible is a popular tool to help you automate I.T. process e.g. provision IT re
 ansible-galaxy collection install quantasw.qnos -p "collection_path"
 
 ## Setting PYTHONPATH
-Set your PYTHONPATH contains this "collection_path". (The same as you assign this collection path in previous section)
 ```
+Set your PYTHONPATH contains this "collection_path". (The same as you assign this collection path in previous section)
 export PYTHONPATH=~/ansible/lib:collection_path
-
+```
 ## QNOS `network_cli` platform
 The `qnos` `cliconf` plugin provides the capabilities to use Ansible vendor agnostic modules (`cli_command` and `cli_config`) to automate against QUANTA Switches. Please refer to [Advanced Topics with Ansible for Network Automation](https://docs.ansible.com/ansible/latest/network/user_guide/index.html) for more detailed information.
 
