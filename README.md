@@ -35,7 +35,8 @@ network_group_modules = eos, nxos, ios, iosxr, junos, vyos, qnos
 
 
 The following is an example task which uses `cli_command` module:
-```
+```yaml
+---
 - name: get output for single command
   cli_command:
     command: show version
@@ -43,7 +44,8 @@ The following is an example task which uses `cli_command` module:
 ```
 
 The following is an example task which uses `cli_config` module:
-```
+```yaml
+---
 - name: setup
   cli_config:
     config: |
@@ -57,7 +59,8 @@ The following is an example task which uses `cli_config` module:
 QNOS Ansible modules provide additional functionality to help managing/configuring QUANTA Switches.
 
 The following is an example task which uses `qnos_system` module to add `ansible.com` and `redhat.com` to the `ip domain-list`. (must add collection namespace in each extended QNOS modules)
-```
+```yaml
+---
 - name: configure domain_search
   quantasw.qnos.qnos_system:
     domain_search:
