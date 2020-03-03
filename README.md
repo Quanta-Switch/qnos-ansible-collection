@@ -19,11 +19,10 @@ The `qnos` `cliconf` plugin provides the capabilities to use Ansible vendor agno
 
 Remember set `ansible_network_os` and `ansible_connection` correctly, i.e.:
 
-```
+```yaml
 ansible_network_os=qnos
 ansible_connection=network_cli
 ```
-
 ## ansible.cfg setting
 inventory      = your host list
 stdout_callback = yaml
@@ -32,7 +31,6 @@ action_plugins = collection_path/plugins/module_utils/action
 terminal_plugins = collection_path/plugins/module_utils/terminal
 cliconf_plugins = collection_path/plugins/module_utils/cliconf
 network_group_modules = eos, nxos, ios, iosxr, junos, vyos, qnos
-
 
 The following is an example task which uses `cli_command` module:
 ```yaml
