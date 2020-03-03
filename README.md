@@ -1,0 +1,1 @@
+# qnos-ansible-collection
