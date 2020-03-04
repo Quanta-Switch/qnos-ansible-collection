@@ -27,6 +27,7 @@ ansible_network_os=qnos
 ansible_connection=network_cli
 ```
 ## ansible.cfg setting
+```yaml
 inventory      = your host list
 stdout_callback = yaml
 module_utils = collection_path/plugins/module_utils
@@ -34,6 +35,7 @@ action_plugins = collection_path/plugins/module_utils/action
 terminal_plugins = collection_path/plugins/module_utils/terminal
 cliconf_plugins = collection_path/plugins/module_utils/cliconf
 network_group_modules = eos, nxos, ios, iosxr, junos, vyos, qnos
+```
 
 The following is an example task which uses `cli_command` module:
 ```yaml
