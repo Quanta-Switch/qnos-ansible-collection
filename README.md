@@ -7,7 +7,10 @@ Because some QNOS modules are under development, you still can use this way to u
 Ansible is a popular tool to help you automate I.T. process e.g. provision IT resources, deploy application and network configurations.
 
 ## Install the collection
+The collection_path is a path which you want to install the collection.
+```
 ansible-galaxy collection install quantasw.qnos -p "collection_path"
+```
 
 ## Setting PYTHONPATH
 ```
