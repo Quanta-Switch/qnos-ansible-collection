@@ -29,7 +29,7 @@ Remember set `ansible_network_os` and `ansible_connection` correctly, i.e.:
 ansible_network_os=qnos
 ansible_connection=network_cli
 ```
-## ansible.cfg setting
+## Setting ansible.cfg
 ```yaml
 inventory      = your host list
 stdout_callback = yaml
