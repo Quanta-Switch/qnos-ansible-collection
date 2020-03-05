@@ -11,11 +11,14 @@ The collection_path is a path which you want to install the collection.
 ```
 ansible-galaxy collection install quantasw.qnos -p "collection_path"
 ```
+P.S. The install command automatically appends the path ansible_collections to the one specified with the -p option unless the parent directory is already in a folder called ansible_collections.
+
+The detail install instruction can refer "Installing collections" parts. https://docs.ansible.com/ansible/latest/user_guide/collections_using.html#collections
 
 ## Setting PYTHONPATH
 Set your PYTHONPATH contains this "collection_path". (The same as you assign this collection path in previous section)
 ```
-export PYTHONPATH=~/ansible/lib:~/ansible/test:collection_path
+export PYTHONPATH=~/ansible/lib:~/ansible/test:collection_path/ansible_collections/quantasw/qnos
 ```
 ## QNOS `network_cli` platform
 The `qnos` `cliconf` plugin provides the capabilities to use Ansible vendor agnostic modules (`cli_command` and `cli_config`) to automate against QUANTA Switches. Please refer to [Advanced Topics with Ansible for Network Automation](https://docs.ansible.com/ansible/latest/network/user_guide/index.html) for more detailed information.
@@ -30,10 +33,10 @@ ansible_connection=network_cli
 ```yaml
 inventory      = your host list
 stdout_callback = yaml
-module_utils = collection_path/plugins/module_utils
-action_plugins = collection_path/plugins/module_utils/action
-terminal_plugins = collection_path/plugins/module_utils/terminal
-cliconf_plugins = collection_path/plugins/module_utils/cliconf
+module_utils = collection_path/ansible_collections/quantasw/qnos/plugins/module_utils
+action_plugins = collection_path/ansible_collections/quantasw/qnos/plugins/module_utils/action
+terminal_plugins = collection_path/ansible_collections/quantasw/qnos/plugins/module_utils/terminal
+cliconf_plugins = collection_path/ansible_collections/quantasw/qnos/plugins/module_utils/cliconf
 network_group_modules = eos, nxos, ios, iosxr, junos, vyos, qnos
 ```
 
