@@ -42,7 +42,7 @@ from ansible.module_utils.network.common.utils import to_list
 try:
     from library.module_utils.network.qnos.qnos import QnosNetworkConfig
 except ImportError:
-    from ansible.module_utils.network.qnos.qnos import QnosNetworkConfig
+    from plugins.module_utils.network.qnos.qnos import QnosNetworkConfig
 
 from ansible.plugins.cliconf import CliconfBase, enable_mode
 
