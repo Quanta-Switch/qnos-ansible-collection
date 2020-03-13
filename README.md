@@ -80,3 +80,11 @@ An example of `network_group_modules`:
 - network_group_modules = eos, nxos, ios, iosxr, junos, vyos
 + network_group_modules = eos, nxos, ios, iosxr, junos, vyos, qnos
 ```
+
+### publish version
+```
+0.0.1   First publish
+0.0.2   1. Remove "library" file
+        2. Correct README.md contents.
+        3. Correct cliconf/qnos.py path to plugins/module_utils.network.qnos.qnos import QnosNetworkC           onfig   
+``` 
