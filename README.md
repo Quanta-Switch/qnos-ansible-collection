@@ -13,7 +13,7 @@ ansible-galaxy collection install quantasw.qnos -p "collection_path"
 ```
 P.S. The install command automatically appends the path ansible_collections to the one specified with the -p option unless the parent directory is already in a folder called ansible_collections.
 
-The detail install instruction can refer "Installing collections" parts. https://docs.ansible.com/ansible/latest/user_guide/collections_using.html#collections
+The detail install instruction can refer [Installing collections](https://docs.ansible.com/ansible/latest/user_guide/collections_using.html#collections)
 
 ## Setting PYTHONPATH
 Set your PYTHONPATH contains this "collection_path". (The same as you assign this collection path in previous section)
