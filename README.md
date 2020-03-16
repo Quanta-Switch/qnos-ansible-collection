@@ -86,5 +86,5 @@ An example of `network_group_modules`:
 0.0.1   First publish
 0.0.2   1. Remove "library" file
         2. Correct README.md contents.
-        3. Correct cliconf/qnos.py path to "plugins/module_utils.network.qnos.qnos import QnosNetworkConfig"
+        3. Correct cliconf/qnos.py path to "plugins.module_utils.network.qnos.qnos import QnosNetworkConfig"
 ``` 
