@@ -60,7 +60,7 @@ The following is an example task which uses `cli_config` module:
 ## Using QNOS modules
 QNOS Ansible modules provide additional functionality to help managing/configuring QUANTA Switches.
 
-The following is an example task which uses `qnos_system` module to add `ansible.com` and `redhat.com` to the `ip domain-list`. (must add collection namespace in each extended QNOS modules)
+The following is an example task which uses `qnos_system` module to add `ansible.com` and `redhat.com` to the `ip domain-list`. (must add collection namespace in each QNOS modules)
 ```yaml
 ---
 - name: configure domain_search
