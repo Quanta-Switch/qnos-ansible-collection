@@ -1,9 +1,4 @@
-# Experimental QNOS Ansible Modules
-This repository keeps the QNOS Ansible modules.
-After QNOS Ansible modules are upstreamed to Ansible, QNOS modules will be installed at the same time when you install Ansible, since they are part of Ansible’s release.
-Because some QNOS modules are under development, you still can use this way to update the QNOS Ansible modules.
-
-#	The purpose of QNOS modules
+##	The purpose of QNOS modules
 Ansible is a popular tool to help you automate I.T. process e.g. provision IT resources, deploy application and network configurations.
 
 ## Install the collection
@@ -16,7 +11,7 @@ P.S. The install command automatically appends the path ansible_collections to t
 The detail install instruction can refer [Installing collections](https://docs.ansible.com/ansible/latest/user_guide/collections_using.html#collections)
 
 ## Setting PYTHONPATH
-Set your PYTHONPATH contains this "collection_path". (The same as you assign this collection path in previous section)
+Set your PYTHONPATH contains this "collection_path".
 ```
 export PYTHONPATH=~/ansible/lib:~/ansible/test:collection_path/ansible_collections/quantasw/qnos
 ```
@@ -30,6 +25,7 @@ ansible_network_os=qnos
 ansible_connection=network_cli
 ```
 ## Setting ansible.cfg
+Add `qnos` to the variable `network_group_modules`
 ```yaml
 inventory      = your host list
 stdout_callback = yaml
@@ -61,7 +57,7 @@ The following is an example task which uses `cli_config` module:
     diff_match: none
 ```
 
-## Extended QNOS modules
+## Using QNOS modules
 QNOS Ansible modules provide additional functionality to help managing/configuring QUANTA Switches.
 
 The following is an example task which uses `qnos_system` module to add `ansible.com` and `redhat.com` to the `ip domain-list`. (must add collection namespace in each extended QNOS modules)
@@ -73,12 +69,6 @@ The following is an example task which uses `qnos_system` module to add `ansible
       - ansible.com
       - redhat.com
   register: result
-```
-### Add `qnos` to the variable `network_group_modules`
-An example of `network_group_modules`:
-```diff
-- network_group_modules = eos, nxos, ios, iosxr, junos, vyos
-+ network_group_modules = eos, nxos, ios, iosxr, junos, vyos, qnos
 ```
 
 ### publish version
