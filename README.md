@@ -16,7 +16,7 @@ Set your PYTHONPATH contains this "collection_path".
 export PYTHONPATH=~/ansible/lib:~/ansible/test:collection_path/ansible_collections/quantasw/qnos
 ```
 ## QNOS `network_cli` platform
-Set `ansible_network_os` and `ansible_connection` correctly, i.e.:
+Set `ansible_network_os` and `ansible_connection` correctly in inventory file, i.e.:
 
 ```yaml
 ansible_network_os=qnos
