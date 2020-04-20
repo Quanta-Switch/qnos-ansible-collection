@@ -68,8 +68,8 @@ The following is an example task which uses `qnos_system` module to add `ansible
       - redhat.com
   register: result
 ```
-The following is an example task which uses `qnos_reboot` to reboot the switch. The `confirm` option set to true if you're sure you want to reboot.
-The `save` option set to yes if you're sure to save the running-config to the startup-config at rebooting.
+The following is an example task which uses `qnos_reboot` to reboot the switch. The `confirm` option set to `yes` if you're sure you want to reboot.
+The `save` option set to `yes` if you're sure to save the running-config to the startup-config at rebooting.
 ```yaml
 ---
 - name: reboot the device
@@ -83,4 +83,5 @@ The `save` option set to yes if you're sure to save the running-config to the st
 0.0.2   1. Remove "library" file
         2. Correct README.md contents.
         3. Correct cliconf/qnos.py path to "plugins.module_utils.network.qnos.qnos import QnosNetworkConfig"
+0.0.3   modify README.md contents and add new tags in galaxy.yml
 ``` 
