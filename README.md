@@ -75,7 +75,7 @@ The `save` option set to `yes` if you're sure to save the running-config to the 
 - name: reboot the device
   qnos_reboot:
     confirm: yes
-    save: no
+    save: yes
 ```
 ### publish version
 ```
