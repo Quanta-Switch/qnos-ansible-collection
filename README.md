@@ -68,7 +68,15 @@ The following is an example task which uses `qnos_system` module to add `ansible
       - redhat.com
   register: result
 ```
-
+The following is an example task which uses `qnos_reboot` to reboot the switch. The `confirm` option set to true if you're sure you want to reboot.
+The `save` option set to yes if you're sure to save the running-config to the startup-config at rebooting.
+```yaml
+---
+- name: reboot the device
+  qnos_reboot:
+    confirm: yes
+    save: no
+```
 ### publish version
 ```
 0.0.1   First publish
