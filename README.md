@@ -83,5 +83,5 @@ The `save` option set to `yes` if you're sure to save the running-config to the 
 0.0.2   1. Remove "library" file
         2. Correct README.md contents.
         3. Correct cliconf/qnos.py path to "plugins.module_utils.network.qnos.qnos import QnosNetworkConfig"
-0.0.3   modify README.md contents and add new tags in galaxy.yml
+0.0.3   Modify README.md contents and add new tags in galaxy.yml
 ``` 
