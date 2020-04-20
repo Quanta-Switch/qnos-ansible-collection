@@ -77,6 +77,28 @@ The `save` option set to `yes` if you're sure to save the running-config to the 
     confirm: yes
     save: yes
 ```
+
+or you can call modules by their short name if you list the quantasw.qnos collection in the playbook's collections, as follows:
+```yaml
+---
+- hosts: host
+  gather_facts: false
+
+  collections:
+    - quantasw.qnos
+    
+- name: configure domain_search
+  qnos_system:
+    domain_search:
+      - ansible.com
+      - redhat.com
+  register: result
+
+- name: reboot the device
+  qnos_reboot:
+    confirm: yes
+    save: yes
+```
 ### publish version
 ```
 0.0.1   First publish
