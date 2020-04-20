@@ -16,9 +16,7 @@ Set your PYTHONPATH contains this "collection_path".
 export PYTHONPATH=~/ansible/lib:~/ansible/test:collection_path/ansible_collections/quantasw/qnos
 ```
 ## QNOS `network_cli` platform
-The `qnos` `cliconf` plugin provides the capabilities to use Ansible vendor agnostic modules (`cli_command` and `cli_config`) to automate against QUANTA Switches. Please refer to [Advanced Topics with Ansible for Network Automation](https://docs.ansible.com/ansible/latest/network/user_guide/index.html) for more detailed information.
-
-Remember set `ansible_network_os` and `ansible_connection` correctly, i.e.:
+Set `ansible_network_os` and `ansible_connection` correctly, i.e.:
 
 ```yaml
 ansible_network_os=qnos
