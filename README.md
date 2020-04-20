@@ -73,7 +73,7 @@ The `save` option set to `yes` if you're sure to save the running-config to the 
 ```yaml
 ---
 - name: reboot the device
-  qnos_reboot:
+  quantasw.qnos.qnos_reboot:
     confirm: yes
     save: yes
 ```
