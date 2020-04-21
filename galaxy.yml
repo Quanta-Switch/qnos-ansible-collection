@@ -9,7 +9,7 @@ namespace: quantasw
 name: qnos
 
 # The version of the collection. Must be compatible with semantic versioning
-version: 0.0.2
+version: 0.0.3
 
 # The path to the Markdown (.md) readme file. This path is relative to the root of the collection
 readme: README.md
@@ -23,7 +23,7 @@ authors:
 ### OPTIONAL but strongly recommended
 
 # A short summary description of the collection
-description: "Ansible collection for ansible related modules which can be used in qnos switches."
+description: "Ansible collection for ansible related modules which can be used in QNOS switches."
 
 # Either a single license or a list of licenses for content inside of a collection. Ansible Galaxy currently only
 # accepts L(SPDX,https://spdx.org/licenses/) licenses. This key is mutually exclusive with 'license_file'
@@ -37,7 +37,9 @@ license_file: ''
 # A list of tags you want to associate with the collection for indexing/searching. A tag name has the same character
 # requirements as 'namespace' and 'name'
 tags:
+- quanta
 - qct
+- switching
 - networking
 - qnos
 
