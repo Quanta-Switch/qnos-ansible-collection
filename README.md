@@ -28,9 +28,9 @@ Add `qnos` to the variable `network_group_modules`
 inventory      = your host list
 stdout_callback = yaml
 module_utils = collection_path/ansible_collections/quantasw/qnos/plugins/module_utils
-action_plugins = collection_path/ansible_collections/quantasw/qnos/plugins/module_utils/action
-terminal_plugins = collection_path/ansible_collections/quantasw/qnos/plugins/module_utils/terminal
-cliconf_plugins = collection_path/ansible_collections/quantasw/qnos/plugins/module_utils/cliconf
+action_plugins = collection_path/ansible_collections/quantasw/qnos/plugins/action
+terminal_plugins = collection_path/ansible_collections/quantasw/qnos/plugins/terminal
+cliconf_plugins = collection_path/ansible_collections/quantasw/qnos/plugins/cliconf
 network_group_modules = eos, nxos, ios, iosxr, junos, vyos, qnos
 ```
 
