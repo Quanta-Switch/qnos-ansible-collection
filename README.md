@@ -106,4 +106,5 @@ or you can call modules by their short name if you list the quantasw.qnos collec
         2. Correct README.md contents.
         3. Correct cliconf/qnos.py path to "plugins.module_utils.network.qnos.qnos import QnosNetworkConfig"
 0.0.3   Modify README.md contents and add new tags in galaxy.yml
+0.0.4   Modify README.md: Setting ansible.cfg contents (action_plugins, terminal_plugins, cliconf_plugins location)
 ``` 
